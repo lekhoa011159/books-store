@@ -1,0 +1,64 @@
+.Component i {
+  color: #ccc;
+  padding-right: 8px;
+}
+
+.Component h3 {
+  margin: 0;
+  padding: 8px 0;
+  font-weight: 400;
+}
+
+.Component span {
+  color: #666;
+  font-size: .9em;
+}
+
+.Component p {
+  margin: 0;
+  padding: 8px 0;
+  font-size: .9em;
+  font-weight: 700;
+}
+
+.Component button {
+  width: 200px;
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-size: 1.2em;
+  text-align: center;
+  vertical-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 3px;
+  background-color: var(--primary);
+  color: #000;
+  transition: background-color .2s, color .2s;
+}
+
+.Component button:hover {
+  background-color: var(--secondary);
+  color: #fff;
+}
+
+.Component button:hover i {
+  color: #ccc;
+}
+
+.Component button i {
+  color: var(--secondary);
+}
+
+/* View Specify book */
+.View {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 64px 0 0;
+}
+
+.View img {
+
+}

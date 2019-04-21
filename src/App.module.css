@@ -1,0 +1,36 @@
+.Scroll {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 90;
+  cursor: pointer;
+}
+
+.Scroll i {
+  background-color: var(--blue-secondary);
+  font-size: 3em;
+  position: absolute;
+  right: 75%;
+  bottom: 50%;
+  transform: translateY(50%);
+  border: 2px solid var(--blue-primary);
+  border-radius: 50%;
+}
+
+.Scroll p {
+  display: inline-block;
+  background-color: var(--blue-secondary);
+  color: #000;
+  margin: 0;
+  padding: 8px 12px 8px 48px;
+  border: 2px solid var(--blue-primary);
+  border-radius: 0 5px 5px 0;
+  font-size: 1.5em;
+  text-align: center;
+  transition: background-color .2s, color .2s;
+}
+
+.Scroll p:hover {
+  background-color: var(--blue-primary);
+  color: #fff;
+}

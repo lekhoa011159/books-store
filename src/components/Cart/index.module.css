@@ -1,0 +1,215 @@
+.Component {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  padding-top: 3em;
+}
+
+/* Payment */
+
+.Component .Payment {
+  display: table;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  grid-column: 17 / span 7;
+  border-radius: 5px;
+  margin-top: 16px;
+  padding: 8px 16px;
+  font-family: 'ZCOOL XiaoWei', serif;
+  font-size: 1.2em;
+}
+
+.Component .Payment ul {
+  margin: 0;
+  padding: 0 16px;
+  list-style-type: none;
+  width: 100%;
+}
+
+.Component .Payment li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Component .Payment hr {
+  border: 1px solid var(--primary);
+  border-radius: 5;
+  width: calc(100% + 64px);
+  margin-left: -32px;
+  padding: 0;
+}
+
+.Component .Payment p {
+  margin: 6px 0;
+  padding: 6px 0;
+}
+
+.Component .Payment input[type=submit] {
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 0;
+  width: 100%;
+  display: block;
+  background-color: var(--blue-secondary);
+  color: #fff;
+  font-size: 1.1em;
+  text-align: center;
+  font-family: 'ZCOOL XiaoWei', serif;
+  transition: background-color .2s;
+}
+
+.Component .Payment input[type=submit]:hover {
+  background-color: var(--blue-primary);
+}
+
+/* Each Item in Cart */
+
+.Component .Item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Component .Item img {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: 120px;
+  width: 88px;
+}
+
+.Component .Item button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-align: center;
+  margin: 8px 0 0 calc(1em + 8px);
+  border-radius: 3px;
+  color: #fff;
+  background-color: var(--red-primary);
+  font-size: .7em;
+}
+
+.Component .Item button:hover {
+  background-color: var(--red-secondary);
+}
+
+/* UI Component of Item in Cart */
+
+.Component .Amount {
+  border: 1px solid #ddd;
+  background-color: #ddd;
+  border-radius: 3px;
+}
+
+.Component .Amount button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: .9em;
+  padding: 6px 12px;
+  border-radius: 3px 0 0 3px;
+  background-color: var(--primary);
+  transition: background-color .2s;
+}
+
+.Component .Amount button:hover {
+  background-color: var(--secondary);
+}
+
+.Component .Amount button:last-child {
+  padding: 6px 15px;
+  border-radius: 0 3px 3px 0;
+}
+
+.Component .Amount input {
+  padding: 4px;
+  font-size: .9em;
+  width: 48px;
+  text-align: center;
+  font-weight: 400;
+  border: none;
+  outline: none;
+}
+
+/* Cart Containers */
+
+.Component .Available {
+  grid-column: 2 / span 14;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.Component .Available li {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--secondary) transparent var(--secondary) transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 2em;
+  font-size: 1.3em;
+}
+
+.Component .Available li:not(:first-child) {
+  border-top: none;
+}
+
+.Component .Available p {
+  font-family: 'ZCOOL XiaoWei', serif;
+  padding-left: 1em;
+  margin: 0;
+}
+
+/* render Empty */
+
+.Empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  font-family: 'ZCOOL XiaoWei', serif;
+  text-align: center;
+}
+
+.Empty p {
+  margin: 0;
+  padding: 8px 0;
+  font-size: 1.4em;
+}
+
+.Empty h1 {
+  text-transform: uppercase;
+  font-size: 3em;
+  margin: 0;
+  padding: 0 0 16px;
+}
+
+.Empty a {
+  text-decoration: none;
+  color: #00f;
+}
+
+.Empty i {
+  font-size: 10em;
+  padding: 48px 48px 36px;
+  color: #ddd;
+  position: relative;
+  padding-left: 0;
+}
+
+.Empty i::after {
+  content: "?";
+  position: absolute;
+  left: 38%;
+  bottom: 24%;
+  transform: translateX(-25%) scale(.5) !important;
+  color: var(--secondary) !important;
+  font-weight: 400;
+}

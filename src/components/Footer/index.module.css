@@ -1,0 +1,63 @@
+.Component {
+  font-family: 'ZCOOL XiaoWei', serif;
+  margin-top: 8em;
+  background-color: #fff;
+  padding: 1em 24px;
+}
+
+.Component hr {
+  margin: 3em 0;
+  padding: 0;
+  border: 1px solid #eee;
+  width: calc(100% + 48px);
+  margin-left: -24px;
+}
+
+.Component ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.Component li {
+  display: block;
+  margin: 4px 0;
+}
+
+.Component a {
+  text-decoration: none;
+  color: #000;
+}
+
+.Component h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Component i {
+  font-size: 2.5em;
+  margin-right: 4px;
+}
+
+.Component .Address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3em;
+}
+
+.Component .Bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.Component .Bottom img {
+  height: 40px;
+}

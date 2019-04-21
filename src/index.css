@@ -1,0 +1,91 @@
+:root {
+  --primary: #dac0ed;
+  --secondary: #bb9ed1;
+  --blue-primary: #595ea8;
+  --blue-secondary: #689dcc;
+  --red-primary: #c93838;
+  --red-secondary: #e83333;
+}
+
+html, body {
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+i.active.active {
+  color: #deed40;
+}
+
+/* hide arrow input[type=number] */
+
+::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Customize Scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ccc;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue-secondary);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue-primary);
+}
+
+/* Specify background-color icons */
+
+.fa-cc-visa {
+  color: #214f99;
+}
+
+.fa-cc-mastercard {
+  color: #f99543;
+}
+
+.fa-cc-jcb {
+  color: #555439;
+}
+
+.fa-cc-paypal {
+  color: #2b17aa;
+}
+
+.fa-cc-apple-pay {
+  color: #000;
+}
+
+.fa-cc-amazon-pay {
+  color: #34323d;
+}
+
+.fa-facebook-square {
+  color: #3b5999;
+}
+
+.fa-youtube-square {
+  color: #cd201f;
+}
+
+.fa-instagram {
+  color: #e4405f;
+}

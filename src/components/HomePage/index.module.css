@@ -1,0 +1,89 @@
+.Component {
+  display: grid;
+  grid-column-gap: 1em;
+  grid-template-columns: repeat(24, 1fr);
+  font-family: 'ZCOOL XiaoWei', serif;
+  padding: 1em;
+  position: relative;
+}
+
+/* Books */
+
+.Component .Books {
+  grid-column: 6 / span 24;
+}
+
+.Component .Books ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.Component .Books li {
+  display: block;
+  margin: 1em;
+  padding: 0 12px;
+}
+
+.Component .Books a {
+  text-decoration: none;
+  color: #000;
+}
+
+.Component .Books img {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 4px;
+  width: auto;
+  max-height: 160px;
+  transition: .3s border-color;
+}
+
+.Component .Books img:hover {
+  border-color: var(--secondary);
+}
+
+/* When List of books is empty */
+
+.Component .Empty {
+  grid-column: 6 / span 24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  user-select: none;
+}
+
+.Component .Empty i {
+  margin-top: -1em;
+  font-size: 16em;
+  color: var(--blue-secondary);
+  position: relative;
+}
+
+.Component .Empty i:after {
+  content: "?";
+  font-family: 'ZCOOL XiaoWei', serif;
+  color: var(--red-secondary);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Component .Empty p {
+  font-size: 1.8em;
+  color: var(--blue-primary);
+  text-align: center;
+  line-height: 1.3em;
+}
+
+/* TopTen */
+
+.Component .TopTen {
+  grid-area: t;
+}
